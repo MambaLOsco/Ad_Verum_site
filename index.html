@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ad Verum — Is your trading edge real?</title>
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171c24; --text: #e8ebef; --muted: #9aa4b0;
+    --accent: #3fb27f; --accent-dark: #2e8a62; --danger: #d4695f; --border: #2a3140;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 72px 0 48px; text-align: center; }
+  .logo { font-size: 14px; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; }
+  h1 { font-size: 40px; line-height: 1.2; margin: 16px 0; }
+  .sub { color: var(--muted); font-size: 19px; max-width: 640px; margin: 0 auto 32px; }
+  .cta { display: inline-block; background: var(--accent); color: #08110c; font-weight: 700;
+         padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 17px; }
+  .cta:hover { background: var(--accent-dark); color: #fff; }
+  .cta-note { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 24px; margin-bottom: 20px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card h3 { font-size: 16px; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 14px; }
+  .step { display: flex; gap: 16px; margin-bottom: 18px; }
+  .num { flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--accent);
+         color: #08110c; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .kill { background: var(--panel); border-left: 4px solid var(--danger); border-radius: 6px;
+          padding: 16px 20px; margin: 14px 0; font-size: 15px; }
+  .kill b { color: var(--danger); }
+  .price { font-size: 42px; font-weight: 800; }
+  .price small { font-size: 16px; color: var(--muted); font-weight: 400; }
+  ul { padding-left: 20px; color: var(--muted); }
+  li { margin-bottom: 6px; }
+  details { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+            padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin-top: 10px; font-size: 15px; }
+  footer { padding: 40px 0 60px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="logo">Ad Verum</div>
+  <h1>Is your trading edge real —<br>or regime luck?</h1>
+  <p class="sub">Upload your trade history. Within 48 hours you get an honest,
+  statistically rigorous verdict on whether your backtest or live record shows
+  a repeatable edge — <em>before</em> you risk real money or another prop-firm
+  challenge fee on it.</p>
+  <!-- TEST-MODE Stripe links (sandbox). Swap for live-mode links before launch. -->
+  <a class="cta" href="https://buy.stripe.com/test_bJefZg1Yw9g9cyP15R5sA01">Get your verdict — €199</a>
+  <div class="cta-note">VAT included · delivered in 48h · plans available for active traders &amp; prop firms</div>
+</header>
+
+<section>
+  <h2>Backtest reports lie to you. Here's how.</h2>
+  <div class="kill">
+    <b>A 5-sigma edge that wasn't.</b> A strategy tested at <b>t = 5.47,
+    p &lt; 0.00001</b> on two years of EUR/USD data — then flipped to
+    <em>significantly negative</em> on the very next stretch of fresh data.
+    Standard backtest metrics said "deploy." The window-level test said "regime
+    artifact." The window-level test was right.
+  </div>
+  <div class="kill">
+    <b>A t-statistic of +6.2 with no edge behind it.</b> Pooled per-trade
+    statistics looked spectacular on GBPUSD — but profits were concentrated in
+    a handful of lucky periods. Judged at the window level: not significant
+    (p = 0.13). Deploying it would have burned the account.
+  </div>
+  <p style="color: var(--muted); font-size: 15px;">Our methodology was built
+  killing false positives like these — 21 consecutive strategy candidates
+  correctly rejected in controlled research, including the two above. That
+  track record of honest negatives is exactly what we now apply to your
+  strategy.</p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="step"><div class="num">1</div><div><b>Pay & upload.</b>
+    After checkout you get an upload link. Send your MT4/MT5 statement,
+    Strategy Tester report, or a CSV of your trades. No EA code, no
+    credentials — trade history only.</div></div>
+  <div class="step"><div class="num">2</div><div><b>We run the gauntlet.</b>
+    Your record goes through the full validation battery: window-level
+    consistency tests that respect regime clustering, sample-size power gates,
+    cost-floor viability, and recency-run detection.</div></div>
+  <div class="step"><div class="num">3</div><div><b>You get the verdict.</b>
+    A PDF report with a one-line verdict (EDGE_DETECTED / INCONSISTENT /
+    NO_EDGE / WEAK / UNDERPOWERED), the per-window evidence behind it, and a
+    plain-language explanation of what it means for your next step.</div></div>
+</section>
+
+<section>
+  <h2>What makes the verdict honest</h2>
+  <div class="cards">
+    <div class="card"><h3>Window-level testing</h3><p>Trade returns cluster by
+      market regime. Pooled statistics hide it; we judge consistency across
+      calendar windows — the unit that actually predicts persistence.</p></div>
+    <div class="card"><h3>No cherry-picking, no upsell</h3><p>We have nothing to
+      sell you after the verdict — no signals, no funded accounts, no course.
+      Most reports say "no edge." That's the point.</p></div>
+    <div class="card"><h3>Costs are a gate</h3><p>A statistically real edge
+      smaller than the spread is a losing strategy. We say so.</p></div>
+    <div class="card"><h3>Recency runs flagged</h3><p>Four straight winning
+      months feel like proof. We've measured exactly this pattern collapsing —
+      twice. If your record leans on a hot streak, the report tells you.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing <small style="font-size:14px; color: var(--muted); font-weight:400;">— all prices include VAT</small></h2>
+  <div class="kill" style="border-left-color: var(--accent);">
+    <b style="color: var(--accent);">Launch offer.</b> Code
+    <b>LAUNCH50</b> takes €50 off your first verdict (€149 — less than any
+    comparable DIY analysis tool, and we do the work). Code <b>TRADER100</b>
+    gets the Trader Plan at €199/month for your first 3 months. Enter the code
+    at checkout.
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Single Verdict</h3>
+      <p class="price" style="font-size:32px;">€199 <small>one-time</small></p>
+      <p>One strategy, full statistical verdict report (PDF) in 48 hours.
+      Per-window evidence tables, plain-language interpretation, one round of
+      follow-up questions included.</p>
+      <p style="margin-top:14px;"><a class="cta" style="padding:10px 22px; font-size:15px;"
+        href="https://buy.stripe.com/test_bJefZg1Yw9g9cyP15R5sA01">Get your verdict</a></p>
+    </div>
+    <div class="card">
+      <h3>Trader Plan</h3>
+      <p class="price" style="font-size:32px;">€299 <small>/ month</small></p>
+      <p>For traders iterating on systems: up to <b>3 verdicts per month</b>
+      (€100 each vs €199 singly), 48h turnaround, cancel anytime.</p>
+      <p style="margin-top:14px;"><a class="cta" style="padding:10px 22px; font-size:15px;"
+        href="https://buy.stripe.com/test_6oU6oG8mU781eGX5m75sA02">Subscribe</a></p>
+    </div>
+    <div class="card">
+      <h3>Prop Desk</h3>
+      <p class="price" style="font-size:32px;">€999 <small>/ month</small></p>
+      <p>For prop firms and funds: up to <b>15 verdicts per month</b> with
+      priority <b>24h turnaround</b>. Validate candidate traders and strategies
+      before allocating capital. Cancel anytime.</p>
+      <p style="margin-top:14px;"><a class="cta" style="padding:10px 22px; font-size:15px;"
+        href="https://buy.stripe.com/test_7sY5kCav21NHdCTg0L5sA03">Start your desk</a></p>
+    </div>
+  </div>
+  <p style="color: var(--muted); font-size:14px; margin-top:16px;">Every tier:
+  if a record has too few trades for any honest verdict, we tell you before
+  running the analysis and the report doesn't count against you (or is refunded
+  on the single tier).</p>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details><summary>What do I need to send?</summary>
+    <p>An MT5/MT4 account statement (HTML), an MT5 Strategy Tester report, a
+    Myfxbook/cTrader export, or a CSV with at least a close time and profit per
+    trade. Ideally 300+ trades spanning 6+ months — more is better. We never
+    need your EA code, indicator logic, or account credentials.</p></details>
+  <details><summary>Will you steal my strategy?</summary>
+    <p>We never see your strategy — only its trades. Trade history alone cannot
+    reconstruct entry logic. Your data is used for your report only and deleted
+    on request.</p></details>
+  <details><summary>What if the verdict is "no edge"?</summary>
+    <p>Then we just saved you the money you were about to lose trading it —
+    typically far more than €199. Roughly speaking, most honest verdicts are
+    negative; if you want guaranteed good news, we're the wrong service.</p></details>
+  <details><summary>I'm a subscriber — how do I manage or cancel my plan?</summary>
+    <p>Through the self-service billing portal:
+    <a href="https://billing.stripe.com/p/login/test_dRm14m6eM63X1UbaGr5sA00"
+       style="color: var(--accent);">manage your subscription</a>. Enter the
+    email you paid with and Stripe sends you a secure login link — update your
+    card, download invoices, or cancel anytime (you keep access until the end
+    of the paid period). No account or password needed.</p></details>
+  <details><summary>Is this investment advice?</summary>
+    <p>No. We assess the statistical properties of a historical record. We do
+    not recommend trading any strategy, and a positive verdict is evidence of
+    past consistency, not a prediction of future returns.</p></details>
+</section>
+
+<footer>
+  <p><b>Ad Verum</b> — honest strategy validation.
+  Contact: <a href="mailto:CONTACT_EMAIL" style="color: var(--accent);">CONTACT_EMAIL</a></p>
+  <p style="margin-top: 12px;">This service provides statistical analysis of
+  historical trading records. It is not investment advice, portfolio
+  management, or a recommendation to trade any financial instrument. Past
+  performance — however statistically consistent — does not guarantee future
+  results. Trading leveraged products carries a high risk of losing money.</p>
+</footer>
+
+</div>
+</body>
+</html>
